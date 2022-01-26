@@ -16,7 +16,7 @@ const App = () => {
   // It makes the request to the API and save data in the recipes array.
   const getRecipes = async () => {
     const response = await fetch(
-      `https://api.edamam.com/search?q=${query}&app_id=266f7907&app_key=2e3829ff65c5e08b6f7878819cd37398&from=0&to=3&calories=591-722&health=alcohol-free`
+      `https://api.edamam.com/search?q=${query}&app_id=266f7907&app_key=2e3829ff65c5e08b6f7878819cd37398&from=0&to=10&calories=591-722&health=alcohol-free`
     );
     const data = await response.json();
     setRecipes(data.hits);
